@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="atog..css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <style>
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style> </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Campus Portal</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">FEEDBACK</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Feedback</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Students info</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Students info</a></li>
+          <li><a href="./atog.html">ATTENDANCE</a></li>
+          <li><a href="#">MARKS</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Academic Detail</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Academic Detial</a></li>
+          <li><a href="#">FEE PAY SLIP</a></li>
+          <li><a href="#">STUDENT FEE LEDGER </a></li>
+          <li><a href="#">MISC. REQ.</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Registeration </span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Registeration</a></li>
+        </ul>
+      </li>
+      <li>
+        
+       
+      <li>
+        <a href="#">
+          <li>
+            <a href="#">
+              <i class='bx bx-history'></i>
+              <span class="link_name">NEED HELP</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">NEED HELP</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Vaishnavi Chaudhary</span>
+    </div>
+    <div class="mid">
+<h1>CLASS ATTENDANCE OF STUDENT</h1>
+
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Current (L%)</th>
+          <th>Current (T%)</th>
+          <th>Current (P%)</th>
+          <th>Overall  (LTP%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ORGANIZATIONAL BEHAVIOUR[19B11BHR11]</td>
+          <td>88.7</td>
+          <td></td>
+          <td></td>
+          <td>88.7</td>
+        </tr>
+        <tr>
+          <td>MARKETING MANAGEMENT[19B11BMM11]</td>
+          <td> 80.6</td>
+          <td></td>
+          <td></td>
+          <td>80.6</td>
+        </tr>
+        <tr>
+          <td>GLOBAL BUSINESS ENVIRONMENT[20B11BGM26]</td>
+          <td>96.7</td>
+          <td></td>
+          <td></td>
+          <td>96.7</td>
+        </tr>
+        <tr>
+          <td>FINANCIAL MANAGEMENT[19B11BAF12]</td>
+          <td>92.7</td>
+          <td></td>
+          <td></td>
+          <td>92.7</td>
+        </tr>
+        <tr>
+            <td>BUSINESS STATISTICS AND ANALYTICS[20B11BGM30]</td>
+          <td>85</td>
+          <td></td>
+          <td></td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>Introduction to Spreadsheets[23B11BSE11]</td>
+          <td>92.7</td>
+          <td>100</td>
+          <td></td>
+          <td>91.3</td>
+        </tr>
+        <tr>
+          <td>Technology, Corporate Governance and Business Ethics[23B11BGM24]</td>
+          <td>91.8</td>
+          <td></td>
+          <td></td>
+          <td>91.8</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <div class="one"></div>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
